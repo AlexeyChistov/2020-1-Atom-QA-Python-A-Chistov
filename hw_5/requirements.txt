@@ -1,0 +1,6 @@
+pytest
+pymysql
+faker
+pandas
+sqlalchemy
+Config
