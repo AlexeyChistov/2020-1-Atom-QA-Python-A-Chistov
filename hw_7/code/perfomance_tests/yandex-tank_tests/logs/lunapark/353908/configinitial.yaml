@@ -1,0 +1,20 @@
+android: {enabled: false, package: yandextank.plugins.Android}
+autostop: {enabled: true, package: yandextank.plugins.Autostop}
+bfg: {enabled: false, package: yandextank.plugins.Bfg}
+console: {enabled: false, package: yandextank.plugins.Console}
+core: {}
+influx: {enabled: false, package: yandextank.plugins.Influx}
+jmeter: {enabled: false, package: yandextank.plugins.JMeter}
+json_report: {enabled: true, package: yandextank.plugins.JsonReport}
+overload: {enabled: true, job_dsc: test_atom_description, job_name: test_atom_leha,
+  package: yandextank.plugins.DataUploader, token_file: /var/loadtest/token.txt}
+phantom:
+  address: 192.168.1.10:5555
+  ammofile: /var/loadtest/ammo.txt
+  enabled: true
+  load_profile: {load_type: rps, schedule: 'line(1, 10, 30)'}
+  package: yandextank.plugins.Phantom
+rcassert: {enabled: true, package: yandextank.plugins.RCAssert}
+rcheck: {enabled: true, package: yandextank.plugins.ResourceCheck}
+shellexec: {enabled: true, package: yandextank.plugins.ShellExec}
+telegraf: {enabled: false, package: yandextank.plugins.Telegraf}

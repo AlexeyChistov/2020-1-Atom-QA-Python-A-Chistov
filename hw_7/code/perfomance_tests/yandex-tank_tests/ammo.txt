@@ -1,0 +1,18 @@
+[Connection: Close]
+[Host: 0.0.0.0:2021]
+/shareware
+
+[Connection: Close]
+[Host: 0.0.0.0:2021]
+[Authorization: Basic dXNlcl8xOjExMQ==]
+/profile
+
+[Connection: Close]
+[Host: 0.0.0.0:2021]
+[Authorization: Basic dXNlcl8xOjExMQ==]
+/album
+
+[Connection: Close]
+[Host: 0.0.0.0:2021]
+[Authorization: Basic dXNlcl8xOjExMQ==]
+/photos

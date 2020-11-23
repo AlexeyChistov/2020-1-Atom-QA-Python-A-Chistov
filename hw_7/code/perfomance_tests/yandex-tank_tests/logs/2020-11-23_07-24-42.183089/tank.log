@@ -1,0 +1,95 @@
+2020-11-23 07:24:42,270 [INFO] root consoleworker.py:434	Log file created
+2020-11-23 07:24:42,270 [INFO] root consoleworker.py:438	Logging handler <logging.FileHandler object at 0x7f5529279c10> added
+2020-11-23 07:24:42,270 [INFO] root consoleworker.py:438	Logging handler <logging.StreamHandler object at 0x7f55292c1850> added
+2020-11-23 07:24:42,271 [INFO] root consoleworker.py:438	Logging handler <logging.StreamHandler object at 0x7f5529265a50> added
+2020-11-23 07:24:42,271 [INFO] root consoleworker.py:373	Created a folder for the test. /var/loadtest/logs/2020-11-23_07-24-42.183089
+2020-11-23 07:24:42,271 [INFO] yandextank.core.tankcore tankcore.py:237	Configuring plugins...
+2020-11-23 07:24:42,271 [INFO] yandextank.core.tankcore tankcore.py:190	Loading plugins...
+2020-11-23 07:24:42,271 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin phantom from yandextank.plugins.Phantom
+2020-11-23 07:24:42,272 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin telegraf from yandextank.plugins.Telegraf
+2020-11-23 07:24:42,272 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin rcheck from yandextank.plugins.ResourceCheck
+2020-11-23 07:24:42,272 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin json_report from yandextank.plugins.JsonReport
+2020-11-23 07:24:42,272 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin overload from yandextank.plugins.DataUploader
+2020-11-23 07:24:42,272 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin rcassert from yandextank.plugins.RCAssert
+2020-11-23 07:24:42,273 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin shellexec from yandextank.plugins.ShellExec
+2020-11-23 07:24:42,273 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin autostop from yandextank.plugins.Autostop
+2020-11-23 07:24:42,273 [DEBUG] yandextank.core.tankcore tankcore.py:212	Plugin instances: {'plugin_phantom': <yandextank.plugins.Phantom.plugin.Plugin object at 0x7f5528f4d050>, 'plugin_autostop': <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f5528f62110>, 'plugin_shellexec': <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f5528f62f90>, 'plugin_rcassert': <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f5528f62e50>, 'plugin_telegraf': <yandextank.plugins.Telegraf.plugin.Plugin object at 0x7f5528f4d750>, 'plugin_rcheck': <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7f5528f4d0d0>, 'plugin_overload': <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7f5528f620d0>, 'plugin_json_report': <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7f5528f4da50>}
+2020-11-23 07:24:42,273 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.Phantom.plugin.Plugin object at 0x7f5528f4d050>
+2020-11-23 07:24:42,273 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.plugins.Autostop.plugin.Plugin'>
+2020-11-23 07:24:42,274 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_07-24-42.183089/answ_XAVI5H.log
+2020-11-23 07:24:42,274 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_07-24-42.183089/phout_5v7bYZ.log
+2020-11-23 07:24:42,274 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom_stat_omHZnv.log
+2020-11-23 07:24:42,275 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom__TmMSj.log
+2020-11-23 07:24:42,275 [DEBUG] yandextank.common.util util.py:479	Trying to resolve address string: 192.168.1.10:2021
+2020-11-23 07:24:42,277 [DEBUG] yandextank.common.util util.py:516	Parsing port
+2020-11-23 07:24:42,277 [DEBUG] yandextank.common.util util.py:527	Lookup result: [(2, 1, 6, '', ('192.168.1.10', 2021)), (2, 2, 17, '', ('192.168.1.10', 2021)), (2, 3, 0, '', ('192.168.1.10', 2021))]
+2020-11-23 07:24:42,277 [INFO] yandextank.common.util util.py:546	Testing connection to resolved address 192.168.1.10 and port 2021
+2020-11-23 07:24:42,278 [INFO] yandextank.plugins.Phantom.utils utils.py:278	Resolved 192.168.1.10 into 192.168.1.10:2021
+2020-11-23 07:24:42,278 [INFO] yandextank.stepper.main main.py:161	Configuring StepperWrapper...
+2020-11-23 07:24:42,278 [DEBUG] yandextank.stepper.main main.py:140	Option ammofile = /var/loadtest/ammo.txt
+2020-11-23 07:24:42,278 [DEBUG] yandextank.stepper.main main.py:140	Option ammo_type = phantom
+2020-11-23 07:24:42,279 [DEBUG] yandextank.stepper.main main.py:140	Option loop = -1
+2020-11-23 07:24:42,279 [DEBUG] yandextank.stepper.main main.py:140	Option ammo_limit = -1
+2020-11-23 07:24:42,279 [DEBUG] yandextank.stepper.main main.py:140	Option load_profile = {'load_type': 'rps', 'schedule': 'line(1, 5, 30)'}
+2020-11-23 07:24:42,279 [DEBUG] yandextank.stepper.main main.py:140	Option instances = 1000
+2020-11-23 07:24:42,279 [DEBUG] yandextank.stepper.main main.py:140	Option uris = []
+2020-11-23 07:24:42,279 [DEBUG] yandextank.stepper.main main.py:140	Option headers = []
+2020-11-23 07:24:42,279 [DEBUG] yandextank.stepper.main main.py:140	Option header_http = 1.0
+2020-11-23 07:24:42,279 [DEBUG] yandextank.stepper.main main.py:140	Option autocases = 0
+2020-11-23 07:24:42,280 [DEBUG] yandextank.stepper.main main.py:140	Option enum_ammo = False
+2020-11-23 07:24:42,280 [DEBUG] yandextank.stepper.main main.py:140	Option use_caching = True
+2020-11-23 07:24:42,280 [DEBUG] yandextank.stepper.main main.py:140	Option file_cache = 8192
+2020-11-23 07:24:42,280 [DEBUG] yandextank.stepper.main main.py:140	Option cache_dir = None
+2020-11-23 07:24:42,280 [DEBUG] yandextank.stepper.main main.py:140	Option force_stepping = 0
+2020-11-23 07:24:42,280 [DEBUG] yandextank.stepper.main main.py:140	Option load_profile = {'load_type': 'rps', 'schedule': 'line(1, 5, 30)'}
+2020-11-23 07:24:42,280 [DEBUG] yandextank.stepper.main main.py:140	Option chosen_cases = 
+2020-11-23 07:24:42,281 [DEBUG] yandextank.stepper.main main.py:269	stpd-hash source: cache version 6|line(1, 5, 30)|-1|-1|line(1, 5, 30)|0|||1.0||False|phantom|/var/loadtest/ammo.txt;33204;3932287;2053;1;1000;1000;322;1606113882.61
+2020-11-23 07:24:42,281 [DEBUG] yandextank.stepper.main main.py:278	Generated cache file name: /var/loadtest/logs/ammo.txt_1dede18199f82eacbae095fafd664bd4.stpd
+2020-11-23 07:24:42,281 [INFO] yandextank.stepper.main main.py:215	Using cached stpd-file: /var/loadtest/logs/ammo.txt_1dede18199f82eacbae095fafd664bd4.stpd
+2020-11-23 07:24:42,281 [DEBUG] yandextank.stepper.main main.py:285	Reading cached stepper info: /var/loadtest/logs/ammo.txt_1dede18199f82eacbae095fafd664bd4.stpd_si.json
+2020-11-23 07:24:42,282 [INFO] yandextank.stepper.main main.py:220	rps_schedule is set. Overriding cached instances param from config: 1000
+2020-11-23 07:24:42,282 [DEBUG] yandextank.stepper.info info.py:43	Published [u'line(1, 5, 30)'] to loadscheme
+2020-11-23 07:24:42,282 [DEBUG] yandextank.stepper.info info.py:43	Published 22 to loop_count
+2020-11-23 07:24:42,282 [DEBUG] yandextank.stepper.info info.py:43	Published [[1.0, 4], [2.0, 8], [3.0, 7], [4.0, 8], [5.0, 4]] to steps
+2020-11-23 07:24:42,282 [DEBUG] yandextank.stepper.info info.py:43	Published 30 to duration
+2020-11-23 07:24:42,283 [DEBUG] yandextank.stepper.info info.py:43	Published 1000 to instances
+2020-11-23 07:24:42,283 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom_NTrxhB.conf
+2020-11-23 07:24:42,283 [DEBUG] yandextank.plugins.Phantom.utils utils.py:128	Generating phantom config: /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom_NTrxhB.conf
+2020-11-23 07:24:42,284 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.Autostop.plugin.Plugin object at 0x7f5528f62110>
+2020-11-23 07:24:42,284 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.common.interfaces.GeneratorPlugin'>
+2020-11-23 07:24:42,286 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7f5528f62f90>
+2020-11-23 07:24:42,286 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7f5528f62e50>
+2020-11-23 07:24:42,286 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.Telegraf.plugin.Plugin object at 0x7f5528f4d750>
+2020-11-23 07:24:42,287 [INFO] yandextank.plugins.Telegraf.plugin plugin.py:156	Detected monitoring configuration: telegraf
+2020-11-23 07:24:42,287 [ERROR] root consoleworker.py:268	Exception occurred:
+<type 'exceptions.IOError'>: [Errno 2] No such file or directory: '/var/loadtest/monitoring'
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/plugin.py", line 159, in configure
+    if self.config.lower() == "none":
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Telegraf/plugin.py", line 140, in config
+    with open(resource.resource_filename(value), 'rb') as config:
+
+2020-11-23 07:24:42,288 [INFO] root consoleworker.py:269	Trying to clean up
+2020-11-23 07:24:42,288 [INFO] yandextank.core.tankcore tankcore.py:561	Releasing lock: /var/lock/lunapark_ogN46E.lock
+2020-11-23 07:24:42,288 [WARNING] root consoleworker.py:408	Job number is not available yet
+2020-11-23 07:24:42,289 [WARNING] root consoleworker.py:415	Job number is not available yet
+2020-11-23 07:24:42,294 [DEBUG] yandextank.core.tankcore tankcore.py:367	Collecting artifacts
+2020-11-23 07:24:42,294 [INFO] yandextank.core.tankcore tankcore.py:368	Artifacts dir: /var/loadtest/logs/2020-11-23_07-24-42.183089
+2020-11-23 07:24:42,294 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom_stat_omHZnv.log to /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom_stat_omHZnv.log
+2020-11-23 07:24:42,294 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom_stat_omHZnv.log
+2020-11-23 07:24:42,295 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_07-24-42.183089/answ_XAVI5H.log to /var/loadtest/logs/2020-11-23_07-24-42.183089/answ_XAVI5H.log
+2020-11-23 07:24:42,295 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_07-24-42.183089/answ_XAVI5H.log
+2020-11-23 07:24:42,295 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom_NTrxhB.conf to /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom_NTrxhB.conf
+2020-11-23 07:24:42,295 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom_NTrxhB.conf
+2020-11-23 07:24:42,296 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: validation_error.yaml to /var/loadtest/logs/2020-11-23_07-24-42.183089/validation_error.yaml
+2020-11-23 07:24:42,296 [WARNING] yandextank.core.tankcore tankcore.py:424	File not found to collect: validation_error.yaml
+2020-11-23 07:24:42,296 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_07-24-42.183089/phout_5v7bYZ.log to /var/loadtest/logs/2020-11-23_07-24-42.183089/phout_5v7bYZ.log
+2020-11-23 07:24:42,296 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_07-24-42.183089/phout_5v7bYZ.log
+2020-11-23 07:24:42,296 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom__TmMSj.log to /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom__TmMSj.log
+2020-11-23 07:24:42,297 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_07-24-42.183089/phantom__TmMSj.log

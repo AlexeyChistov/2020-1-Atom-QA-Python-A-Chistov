@@ -1,0 +1,1286 @@
+2020-11-23 06:50:59,441 [INFO] root consoleworker.py:434	Log file created
+2020-11-23 06:50:59,442 [INFO] root consoleworker.py:438	Logging handler <logging.FileHandler object at 0x7fc982229c10> added
+2020-11-23 06:50:59,442 [INFO] root consoleworker.py:438	Logging handler <logging.StreamHandler object at 0x7fc982271850> added
+2020-11-23 06:50:59,442 [INFO] root consoleworker.py:438	Logging handler <logging.StreamHandler object at 0x7fc982215a50> added
+2020-11-23 06:50:59,442 [INFO] root consoleworker.py:373	Created a folder for the test. /var/loadtest/logs/2020-11-23_06-50-59.353573
+2020-11-23 06:50:59,442 [INFO] yandextank.core.tankcore tankcore.py:237	Configuring plugins...
+2020-11-23 06:50:59,442 [INFO] yandextank.core.tankcore tankcore.py:190	Loading plugins...
+2020-11-23 06:50:59,443 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin phantom from yandextank.plugins.Phantom
+2020-11-23 06:50:59,443 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin rcheck from yandextank.plugins.ResourceCheck
+2020-11-23 06:50:59,443 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin json_report from yandextank.plugins.JsonReport
+2020-11-23 06:50:59,443 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin overload from yandextank.plugins.DataUploader
+2020-11-23 06:50:59,444 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin rcassert from yandextank.plugins.RCAssert
+2020-11-23 06:50:59,444 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin shellexec from yandextank.plugins.ShellExec
+2020-11-23 06:50:59,444 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin autostop from yandextank.plugins.Autostop
+2020-11-23 06:50:59,444 [DEBUG] yandextank.core.tankcore tankcore.py:212	Plugin instances: {'plugin_phantom': <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>, 'plugin_autostop': <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>, 'plugin_shellexec': <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>, 'plugin_rcassert': <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>, 'plugin_rcheck': <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>, 'plugin_overload': <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>, 'plugin_json_report': <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>}
+2020-11-23 06:50:59,444 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:50:59,444 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.plugins.Autostop.plugin.Plugin'>
+2020-11-23 06:50:59,445 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_06-50-59.353573/answ_61FImx.log
+2020-11-23 06:50:59,445 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_06-50-59.353573/phout_7upRbg.log
+2020-11-23 06:50:59,445 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_stat_8sH817.log
+2020-11-23 06:50:59,445 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_Rqfr8m.log
+2020-11-23 06:50:59,446 [DEBUG] yandextank.common.util util.py:479	Trying to resolve address string: 192.168.1.10:2021
+2020-11-23 06:50:59,448 [DEBUG] yandextank.common.util util.py:516	Parsing port
+2020-11-23 06:50:59,448 [DEBUG] yandextank.common.util util.py:527	Lookup result: [(2, 1, 6, '', ('192.168.1.10', 2021)), (2, 2, 17, '', ('192.168.1.10', 2021)), (2, 3, 0, '', ('192.168.1.10', 2021))]
+2020-11-23 06:50:59,448 [INFO] yandextank.common.util util.py:546	Testing connection to resolved address 192.168.1.10 and port 2021
+2020-11-23 06:50:59,449 [INFO] yandextank.plugins.Phantom.utils utils.py:278	Resolved 192.168.1.10 into 192.168.1.10:2021
+2020-11-23 06:50:59,449 [INFO] yandextank.stepper.main main.py:161	Configuring StepperWrapper...
+2020-11-23 06:50:59,450 [DEBUG] yandextank.stepper.main main.py:140	Option ammofile = /var/loadtest/ammo.txt
+2020-11-23 06:50:59,450 [DEBUG] yandextank.stepper.main main.py:140	Option ammo_type = phantom
+2020-11-23 06:50:59,450 [DEBUG] yandextank.stepper.main main.py:140	Option loop = -1
+2020-11-23 06:50:59,450 [DEBUG] yandextank.stepper.main main.py:140	Option ammo_limit = -1
+2020-11-23 06:50:59,450 [DEBUG] yandextank.stepper.main main.py:140	Option load_profile = {'load_type': 'rps', 'schedule': 'line(1, 5, 30)'}
+2020-11-23 06:50:59,450 [DEBUG] yandextank.stepper.main main.py:140	Option instances = 1000
+2020-11-23 06:50:59,450 [DEBUG] yandextank.stepper.main main.py:140	Option uris = []
+2020-11-23 06:50:59,450 [DEBUG] yandextank.stepper.main main.py:140	Option headers = []
+2020-11-23 06:50:59,450 [DEBUG] yandextank.stepper.main main.py:140	Option header_http = 1.0
+2020-11-23 06:50:59,451 [DEBUG] yandextank.stepper.main main.py:140	Option autocases = 0
+2020-11-23 06:50:59,451 [DEBUG] yandextank.stepper.main main.py:140	Option enum_ammo = False
+2020-11-23 06:50:59,451 [DEBUG] yandextank.stepper.main main.py:140	Option use_caching = True
+2020-11-23 06:50:59,451 [DEBUG] yandextank.stepper.main main.py:140	Option file_cache = 8192
+2020-11-23 06:50:59,451 [DEBUG] yandextank.stepper.main main.py:140	Option cache_dir = None
+2020-11-23 06:50:59,451 [DEBUG] yandextank.stepper.main main.py:140	Option force_stepping = 0
+2020-11-23 06:50:59,451 [DEBUG] yandextank.stepper.main main.py:140	Option load_profile = {'load_type': 'rps', 'schedule': 'line(1, 5, 30)'}
+2020-11-23 06:50:59,451 [DEBUG] yandextank.stepper.main main.py:140	Option chosen_cases = 
+2020-11-23 06:50:59,452 [DEBUG] yandextank.stepper.main main.py:269	stpd-hash source: cache version 6|line(1, 5, 30)|-1|-1|line(1, 5, 30)|0|||1.0||False|phantom|/var/loadtest/ammo.txt;33204;3932287;2053;1;1000;1000;322;1606113882.61
+2020-11-23 06:50:59,452 [DEBUG] yandextank.stepper.main main.py:278	Generated cache file name: /var/loadtest/logs/ammo.txt_1dede18199f82eacbae095fafd664bd4.stpd
+2020-11-23 06:50:59,452 [INFO] yandextank.stepper.main main.py:300	Making stpd-file: /var/loadtest/logs/ammo.txt_1dede18199f82eacbae095fafd664bd4.stpd
+2020-11-23 06:50:59,452 [DEBUG] yandextank.stepper.info info.py:43	Published 1000 to instances
+2020-11-23 06:50:59,452 [DEBUG] yandextank.stepper.info info.py:43	Published ['line(1, 5, 30)'] to loadscheme
+2020-11-23 06:50:59,454 [DEBUG] yandextank.stepper.info info.py:43	Published 30 to duration
+2020-11-23 06:50:59,454 [DEBUG] yandextank.stepper.info info.py:43	Published [(1.0, 4), (2.0, 8), (3.0, 7), (4.0, 8), (5.0, 4)] to steps
+2020-11-23 06:50:59,454 [DEBUG] netort.resource resource.py:134	Resource /var/loadtest/ammo.txt format detected: None.
+2020-11-23 06:50:59,454 [INFO] yandextank.stepper.config config.py:104	Setting ammo_type 'uri' because ammo is not started with digit and you did not specify ammo format
+2020-11-23 06:50:59,454 [INFO] yandextank.stepper.missile missile.py:266	Loading ammo from '/var/loadtest/ammo.txt' using URI format.
+2020-11-23 06:50:59,455 [INFO] yandextank.stepper.config config.py:123	Using UriReader ammo reader
+2020-11-23 06:50:59,455 [DEBUG] netort.resource resource.py:134	Resource /var/loadtest/ammo.txt format detected: None.
+2020-11-23 06:50:59,466 [DEBUG] yandextank.stepper.main main.py:294	Saving stepper info: /var/loadtest/logs/ammo.txt_1dede18199f82eacbae095fafd664bd4.stpd_si.json
+2020-11-23 06:50:59,467 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_jA2XmK.conf
+2020-11-23 06:50:59,468 [DEBUG] yandextank.plugins.Phantom.utils utils.py:128	Generating phantom config: /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_jA2XmK.conf
+2020-11-23 06:50:59,468 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:50:59,469 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.common.interfaces.GeneratorPlugin'>
+2020-11-23 06:50:59,471 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:50:59,471 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:50:59,471 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:50:59,472 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:50:59,472 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:50:59,473 [INFO] yandextank.core.tankcore tankcore.py:249	Preparing test...
+2020-11-23 06:50:59,473 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:50:59,473 [DEBUG] netort.process process.py:23	Starting: ['phantom', 'check', '/var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_jA2XmK.conf']
+2020-11-23 06:51:00,376 [DEBUG] netort.process process.py:46	Process output:
+setup_t module_setup = setup_module_t {
+  dir = "/usr/lib/phantom"
+  list = {
+    io_monitor
+    io_benchmark
+    io_benchmark_method_stream
+    io_benchmark_method_stream_ipv4
+    io_benchmark_method_stream_ipv6
+    io_benchmark_method_stream_source_log
+    io_benchmark_method_stream_proto_none
+    io_benchmark_method_stream_proto_http
+  }
+}
+setup_t stat_setup = setup_stat_t {
+  list = {
+    default
+  }
+}
+scheduler_t main_scheduler = scheduler_simple_t {
+  threads = 3
+  limit = unlimited
+  event_buf_size = 20
+  timeout_prec = 001
+  tname = ""
+  policy = other
+  priority = 0
+}
+logger_t phantom_logger = logger_file_t {
+  level = info
+  filename = "/var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_Rqfr8m.log"
+  check_interval = 1s
+  scheduler = main_scheduler
+}
+logger = phantom_logger
+io_t benchmark_io = io_benchmark_t {
+  instances = 1000
+  method_t stream_method = method_stream_ipv4_t {
+    address = 192.168.1.10
+    port = 2021
+    bind = {
+    }
+    cork = true
+    timeout = 11s
+    ibuf_size = 4K
+    obuf_size = 1K
+    source_t source_log = source_log_t {
+      filename = "/var/loadtest/logs/ammo.txt_1dede18199f82eacbae095fafd664bd4.stpd"
+      ibuf_size = 1M
+    }
+    source = source_log
+    transport = NULL
+    proto_t http_proto0 = proto_http_t {
+      reply_limits = {
+        line = 1K
+        field_num = 128
+        field = 8K
+        entity = 8M
+      }
+    }
+    proto_t none_proto = proto_none_t {
+    }
+    proto = http_proto0
+    logger_t benchmark_logger = logger_default_t {
+      filename = "/var/loadtest/logs/2020-11-23_06-50-59.353573/answ_61FImx.log"
+      check_interval = 1s
+      scheduler = main_scheduler
+      level = all
+    }
+    logger_t brief_logger = logger_brief_t {
+      time_format = unix
+      filename = "/var/loadtest/logs/2020-11-23_06-50-59.353573/phout_7upRbg.log"
+      check_interval = 1s
+      scheduler = main_scheduler
+      level = all
+    }
+    loggers = {
+      brief_logger
+    }
+  }
+  method = stream_method
+  times_t simple_times = times_simple_t {
+    max = 11s
+    min = 001
+    steps = 20
+  }
+  times = simple_times
+  scheduler = main_scheduler
+}
+io_t monitor_io = io_monitor_t {
+  clear = true
+  period = 1s
+  list = {
+    main_scheduler
+    benchmark_io
+  }
+  stat_id = default
+  filename = "/var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_stat_8sH817.log"
+  check_interval = 1s
+  scheduler = main_scheduler
+}
+
+2020-11-23 06:51:00,377 [DEBUG] netort.process process.py:48	Process exit code: 0
+2020-11-23 06:51:00,377 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:116	Linking sample reader to aggregator. Reading samples from /var/loadtest/logs/2020-11-23_06-50-59.353573/phout_7upRbg.log
+2020-11-23 06:51:00,377 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:120	Linking stats reader to aggregator. Reading stats from /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_stat_8sH817.log
+2020-11-23 06:51:00,377 [DEBUG] yandextank.plugins.Phantom.utils utils.py:158	Steps: [(1.0, 4), (2.0, 8), (3.0, 7), (4.0, 8), (5.0, 4)]
+2020-11-23 06:51:00,378 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2020-11-23 06:51:00,378 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:129	Console not found: %s
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 127, in prepare_test
+    console = self.core.get_plugin_of_type(ConsolePlugin)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 400, in get_plugin_of_type
+    raise KeyError("Requested plugin type not found: %s" % plugin_class)
+KeyError: "Requested plugin type not found: <class 'yandextank.plugins.Console.plugin.Plugin'>"
+2020-11-23 06:51:00,379 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:00,379 [DEBUG] yandextank.common.interfaces plugin.py:78	Criterion objects: {}
+2020-11-23 06:51:00,379 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2020-11-23 06:51:00,379 [DEBUG] yandextank.common.interfaces plugin.py:83	Console not found: "Requested plugin type not found: <class 'yandextank.plugins.Console.plugin.Plugin'>"
+2020-11-23 06:51:00,380 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:00,380 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:00,380 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:00,380 [INFO] yandextank.common.interfaces plugin.py:39	Checking tank resources...
+2020-11-23 06:51:00,381 [DEBUG] netort.process process.py:23	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs /var/loadtest/logs | tail -n 1 | awk '{print \$4}' "
+2020-11-23 06:51:01,288 [DEBUG] netort.process process.py:46	Process output:
+194298
+
+2020-11-23 06:51:01,289 [DEBUG] netort.process process.py:48	Process exit code: 0
+2020-11-23 06:51:01,289 [DEBUG] root plugin.py:58	Result: (0, '194298\n', '')
+2020-11-23 06:51:01,289 [DEBUG] yandextank.common.interfaces plugin.py:64	Disk free space: 194298/2048
+2020-11-23 06:51:01,289 [DEBUG] yandextank.common.interfaces plugin.py:75	Memory free: 4225/512
+2020-11-23 06:51:01,289 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:01,290 [DEBUG] yandextank.plugins.Phantom.utils utils.py:158	Steps: [(1.0, 4), (2.0, 8), (3.0, 7), (4.0, 8), (5.0, 4)]
+2020-11-23 06:51:01,290 [INFO] root plugin.py:523	Using OVERLOAD backend
+2020-11-23 06:51:01,290 [DEBUG] yandextank.plugins.DataUploader.plugin plugin.py:618	Trying to read token from /var/loadtest/token.txt
+2020-11-23 06:51:01,290 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:624	Read authentication token from /var/loadtest/token.txt, token length is 32 bytes
+2020-11-23 06:51:01,308 [INFO] yandextank.plugins.DataUploader.client client.py:59	Proxy not set
+2020-11-23 06:51:01,308 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:647	Detected target: 192.168.1.10
+2020-11-23 06:51:01,322 [DEBUG] yandextank.plugins.DataUploader.client client.py:336	Job create request: {'person': 'root', 'host': '192.168.1.10', 'task': '', 'tank': 'alexey-Extensa-2540', 'notify': [], 'loadscheme': ['line(1, 5, 30)'], 'detailed_time': None, 'port': 2021}
+2020-11-23 06:51:01,325 [DEBUG] urllib3.connectionpool connectionpool.py:813	Starting new HTTPS connection (1): overload.yandex.net:443
+2020-11-23 06:51:01,712 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/create.json?api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 None
+2020-11-23 06:51:01,714 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:789	Job created: 354049
+2020-11-23 06:51:01,716 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinitial config
+2020-11-23 06:51:01,764 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/configinitial.txt?api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:01,767 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:485	Locking targets: ['192.168.1.10']
+2020-11-23 06:51:01,767 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:487	Locked targets: ['192.168.1.10']
+2020-11-23 06:51:01,773 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/job_no: 354049
+2020-11-23 06:51:01,777 [DEBUG] urllib3.connectionpool connectionpool.py:240	Resetting dropped connection: overload.yandex.net
+2020-11-23 06:51:01,901 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/edit.json?api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 19
+2020-11-23 06:51:01,903 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2020-11-23 06:51:01,903 [DEBUG] yandextank.plugins.DataUploader.plugin plugin.py:276	Console plugin not found
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/DataUploader/plugin.py", line 274, in prepare_test
+    console = self.core.get_plugin_of_type(ConsolePlugin)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 400, in get_plugin_of_type
+    raise KeyError("Requested plugin type not found: %s" % plugin_class)
+KeyError: "Requested plugin type not found: <class 'yandextank.plugins.Console.plugin.Plugin'>"
+2020-11-23 06:51:01,904 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinitial config
+2020-11-23 06:51:01,949 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/configinitial.txt?api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:01,952 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinfo config
+2020-11-23 06:51:01,955 [DEBUG] urllib3.connectionpool connectionpool.py:240	Resetting dropped connection: overload.yandex.net
+2020-11-23 06:51:02,079 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/configinfo.txt?api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:02,081 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:02,081 [INFO] yandextank.core.tankcore tankcore.py:259	Starting test...
+2020-11-23 06:51:02,082 [DEBUG] yandextank.plugins.Phantom.utils utils.py:158	Steps: [(1.0, 4), (2.0, 8), (3.0, 7), (4.0, 8), (5.0, 4)]
+2020-11-23 06:51:02,083 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:63	using verbose histogram
+2020-11-23 06:51:02,087 [DEBUG] yandextank.core.tankcore tankcore.py:263	Starting <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:02,088 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:144	Starting phantom with arguments: ['phantom', 'run', '/var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_jA2XmK.conf']
+2020-11-23 06:51:02,089 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_stdout_stderr_ozbuXa.log
+2020-11-23 06:51:03,028 [INFO] yandextank.core.tankcore tankcore.py:267	Plugin <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0> required 0.939860 seconds to start
+2020-11-23 06:51:03,028 [DEBUG] yandextank.core.tankcore tankcore.py:263	Starting <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:03,029 [INFO] yandextank.core.tankcore tankcore.py:267	Plugin <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390> required 0.000019 seconds to start
+2020-11-23 06:51:03,029 [DEBUG] yandextank.core.tankcore tankcore.py:263	Starting <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:03,029 [INFO] yandextank.core.tankcore tankcore.py:267	Plugin <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290> required 0.000025 seconds to start
+2020-11-23 06:51:03,029 [DEBUG] yandextank.core.tankcore tankcore.py:263	Starting <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:03,029 [INFO] yandextank.core.tankcore tankcore.py:267	Plugin <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50> required 0.000006 seconds to start
+2020-11-23 06:51:03,030 [DEBUG] yandextank.core.tankcore tankcore.py:263	Starting <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:03,030 [INFO] yandextank.core.tankcore tankcore.py:267	Plugin <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110> required 0.000005 seconds to start
+2020-11-23 06:51:03,030 [DEBUG] yandextank.core.tankcore tankcore.py:263	Starting <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:03,030 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:394	Status sender thread started
+2020-11-23 06:51:03,031 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:413	Data Uploader thread started
+2020-11-23 06:51:03,033 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:413	Monitoring Uploader thread started
+2020-11-23 06:51:03,034 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:298	Web link: https://overload.yandex.net/354049
+2020-11-23 06:51:03,036 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/jobno: 354049
+2020-11-23 06:51:03,036 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/web_link: https://overload.yandex.net/354049
+2020-11-23 06:51:03,036 [DEBUG] yandextank.plugins.DataUploader.plugin plugin.py:305	Saving jobno to: jobno_file.txt
+2020-11-23 06:51:03,037 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): jobno_file.txt
+2020-11-23 06:51:03,037 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinitial config
+2020-11-23 06:51:03,112 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 24.98ms
+2020-11-23 06:51:03,247 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/configinitial.txt?api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:03,249 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinfo config
+2020-11-23 06:51:03,253 [DEBUG] urllib3.connectionpool connectionpool.py:240	Resetting dropped connection: overload.yandex.net
+2020-11-23 06:51:03,389 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/configinfo.txt?api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:03,391 [INFO] yandextank.core.tankcore tankcore.py:267	Plugin <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990> required 0.360610 seconds to start
+2020-11-23 06:51:03,392 [DEBUG] yandextank.core.tankcore tankcore.py:263	Starting <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:03,392 [INFO] yandextank.core.tankcore tankcore.py:267	Plugin <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10> required 0.000011 seconds to start
+2020-11-23 06:51:03,393 [INFO] yandextank.core.tankcore tankcore.py:274	Waiting for test to finish...
+2020-11-23 06:51:03,393 [INFO] yandextank.core.tankcore tankcore.py:275	Artifacts dir: /var/loadtest/logs/2020-11-23_06-50-59.353573
+2020-11-23 06:51:03,394 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:03,394 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:03,394 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:03,395 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 29
+2020-11-23 06:51:03,395 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:03,395 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:03,395 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:03,396 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:03,396 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:03,396 [DEBUG] netort.process process.py:23	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs /var/loadtest/logs | tail -n 1 | awk '{print \$4}' "
+2020-11-23 06:51:04,369 [DEBUG] netort.process process.py:46	Process output:
+194298
+
+2020-11-23 06:51:04,370 [DEBUG] netort.process process.py:48	Process exit code: 0
+2020-11-23 06:51:04,370 [DEBUG] root plugin.py:58	Result: (0, '194298\n', '')
+2020-11-23 06:51:04,370 [DEBUG] yandextank.common.interfaces plugin.py:64	Disk free space: 194298/2048
+2020-11-23 06:51:04,371 [DEBUG] yandextank.common.interfaces plugin.py:75	Memory free: 4212/512
+2020-11-23 06:51:04,371 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:04,371 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:04,371 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.977668046951
+2020-11-23 06:51:04,372 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 29, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:04,372 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:04,372 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:04,373 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:04,373 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 28
+2020-11-23 06:51:04,373 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:04,373 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:04,374 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:04,374 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:04,374 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:04,374 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:04,374 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:04,374 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00198411941528
+2020-11-23 06:51:04,374 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 28, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:04,873 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:04,873 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:04,873 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:04,873 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 28
+2020-11-23 06:51:04,873 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:04,874 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:04,874 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:04,874 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:04,874 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:04,874 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:04,874 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:04,874 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00129699707031
+2020-11-23 06:51:04,874 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 28, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:05,148 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 28.74ms
+2020-11-23 06:51:05,374 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:05,374 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114263]
+2020-11-23 06:51:05,375 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:05,375 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 27
+2020-11-23 06:51:05,375 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:05,376 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:05,376 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:05,376 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:05,376 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:05,377 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:05,377 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:05,377 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00339293479919
+2020-11-23 06:51:05,378 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 27, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:05,875 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:05,875 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:05,875 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:05,876 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 27
+2020-11-23 06:51:05,876 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:05,876 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:05,877 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:05,877 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:05,877 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:05,877 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:05,877 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:05,878 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00315690040588
+2020-11-23 06:51:05,878 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 27, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:06,184 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 27.71ms
+2020-11-23 06:51:06,376 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:06,376 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114264]
+2020-11-23 06:51:06,377 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:06,377 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 26
+2020-11-23 06:51:06,377 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:06,377 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:06,378 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:06,378 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:06,378 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:06,378 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:06,379 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:06,379 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00319218635559
+2020-11-23 06:51:06,379 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 26, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:06,877 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:06,878 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:06,878 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:06,878 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 26
+2020-11-23 06:51:06,879 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:06,879 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:06,879 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:06,879 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:06,880 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:06,880 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:06,880 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:06,880 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00340104103088
+2020-11-23 06:51:06,881 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 26, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:07,208 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 15.44ms
+2020-11-23 06:51:07,226 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 9.49ms
+2020-11-23 06:51:07,234 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.46ms
+2020-11-23 06:51:07,378 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114263, 1606114264]
+2020-11-23 06:51:07,378 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114265]
+2020-11-23 06:51:07,379 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 1/
+2020-11-23 06:51:07,380 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 3/
+2020-11-23 06:51:07,380 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:07,380 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 25
+2020-11-23 06:51:07,381 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:07,381 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:07,381 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:07,382 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:07,382 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:07,382 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:07,382 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:07,383 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00480699539185
+2020-11-23 06:51:07,383 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 25, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:07,651 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:07,653 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:07,855 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:07,857 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:07,879 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:07,879 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:07,879 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:07,880 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 25
+2020-11-23 06:51:07,880 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:07,880 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:07,880 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:07,881 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:07,881 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:07,881 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:07,881 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:07,882 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00307488441467
+2020-11-23 06:51:07,882 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 25, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:08,265 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 29.07ms
+2020-11-23 06:51:08,379 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:08,380 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114266]
+2020-11-23 06:51:08,380 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:08,380 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 24
+2020-11-23 06:51:08,380 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:08,380 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:08,380 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:08,380 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:08,380 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:08,380 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:08,380 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:08,381 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00128889083862
+2020-11-23 06:51:08,381 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 24, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:08,880 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:08,880 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:08,881 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:08,881 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 24
+2020-11-23 06:51:08,881 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:08,882 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:08,882 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:08,882 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:08,882 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:08,883 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:08,883 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:08,883 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00321888923645
+2020-11-23 06:51:08,883 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 24, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:09,302 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 27.85ms
+2020-11-23 06:51:09,316 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.74ms
+2020-11-23 06:51:09,381 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114265]
+2020-11-23 06:51:09,382 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114267]
+2020-11-23 06:51:09,382 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 4/
+2020-11-23 06:51:09,383 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:09,383 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 23
+2020-11-23 06:51:09,383 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:09,383 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:09,384 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:09,384 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:09,384 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:09,384 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:09,385 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:09,385 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00394797325134
+2020-11-23 06:51:09,385 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 23, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:09,602 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:09,604 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:09,882 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:09,883 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:09,883 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:09,884 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 23
+2020-11-23 06:51:09,884 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:09,884 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:09,884 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:09,885 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:09,885 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:09,885 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:09,885 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:09,886 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00336813926697
+2020-11-23 06:51:09,886 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 23, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:10,345 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 27.83ms
+2020-11-23 06:51:10,361 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.64ms
+2020-11-23 06:51:10,369 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.32ms
+2020-11-23 06:51:10,383 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114266, 1606114267]
+2020-11-23 06:51:10,384 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114268]
+2020-11-23 06:51:10,384 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 5/
+2020-11-23 06:51:10,384 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 7/
+2020-11-23 06:51:10,384 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:10,384 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 22
+2020-11-23 06:51:10,384 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:10,384 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:10,385 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:10,385 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:10,385 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:10,385 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:10,385 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:10,385 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00174403190613
+2020-11-23 06:51:10,385 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 22, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:10,626 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:10,628 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:10,825 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:10,827 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:10,884 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:10,885 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:10,885 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:10,885 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 22
+2020-11-23 06:51:10,886 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:10,886 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:10,886 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:10,886 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:10,887 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:10,887 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:10,887 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:10,887 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00313496589661
+2020-11-23 06:51:10,888 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 22, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:11,397 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:11,400 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114269]
+2020-11-23 06:51:11,400 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:11,400 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 30.48ms
+2020-11-23 06:51:11,401 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 21
+2020-11-23 06:51:11,402 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:11,404 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:11,409 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:11,411 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:11,411 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:11,411 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:11,411 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:11,411 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.016841173172
+2020-11-23 06:51:11,411 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 21, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:11,895 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:11,896 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:11,896 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:11,896 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 21
+2020-11-23 06:51:11,896 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:11,896 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:11,896 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:11,896 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:11,896 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:11,896 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:11,896 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:11,897 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00124216079712
+2020-11-23 06:51:11,897 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 21, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:12,396 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:12,396 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114270]
+2020-11-23 06:51:12,397 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:12,397 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 20
+2020-11-23 06:51:12,397 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:12,397 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:12,397 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:12,397 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:12,397 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:12,397 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:12,397 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:12,397 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00134897232056
+2020-11-23 06:51:12,398 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 20, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:12,426 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 14.46ms
+2020-11-23 06:51:12,439 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.65ms
+2020-11-23 06:51:12,447 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.87ms
+2020-11-23 06:51:12,897 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114268, 1606114269]
+2020-11-23 06:51:12,898 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:12,898 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 9/
+2020-11-23 06:51:12,899 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 10/
+2020-11-23 06:51:12,899 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:12,900 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 20
+2020-11-23 06:51:12,900 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:12,900 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:12,901 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:12,901 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:12,901 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:12,901 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:12,902 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:12,902 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00512599945068
+2020-11-23 06:51:12,903 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 20, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:13,180 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:13,181 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:13,385 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:13,386 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:13,398 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:13,399 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114271]
+2020-11-23 06:51:13,399 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:13,399 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 19
+2020-11-23 06:51:13,399 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:13,399 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:13,399 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:13,399 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:13,400 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:13,400 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:13,400 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:13,400 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.001788854599
+2020-11-23 06:51:13,400 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 19, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:13,463 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 13.97ms
+2020-11-23 06:51:13,479 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 7.36ms
+2020-11-23 06:51:13,899 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114270]
+2020-11-23 06:51:13,899 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:13,900 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 13/
+2020-11-23 06:51:13,900 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:13,900 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 19
+2020-11-23 06:51:13,900 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:13,900 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:13,900 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:13,900 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:13,900 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:13,900 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:13,901 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:13,901 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00156807899475
+2020-11-23 06:51:13,901 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 19, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:14,101 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:14,102 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:14,400 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:14,401 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114272]
+2020-11-23 06:51:14,401 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:14,401 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 18
+2020-11-23 06:51:14,402 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:14,402 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:14,402 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:14,402 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:14,403 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:14,403 [DEBUG] netort.process process.py:23	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs /var/loadtest/logs | tail -n 1 | awk '{print \$4}' "
+2020-11-23 06:51:14,511 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 29.91ms
+2020-11-23 06:51:14,534 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 10.51ms
+2020-11-23 06:51:15,329 [DEBUG] netort.process process.py:46	Process output:
+194298
+
+2020-11-23 06:51:15,329 [DEBUG] netort.process process.py:48	Process exit code: 0
+2020-11-23 06:51:15,329 [DEBUG] root plugin.py:58	Result: (0, '194298\n', '')
+2020-11-23 06:51:15,330 [DEBUG] yandextank.common.interfaces plugin.py:64	Disk free space: 194298/2048
+2020-11-23 06:51:15,330 [DEBUG] yandextank.common.interfaces plugin.py:75	Memory free: 4235/512
+2020-11-23 06:51:15,330 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:15,330 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:15,330 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.930602073669
+2020-11-23 06:51:15,331 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 18, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:15,331 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114271]
+2020-11-23 06:51:15,331 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114273]
+2020-11-23 06:51:15,331 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 14/
+2020-11-23 06:51:15,331 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:15,331 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 17
+2020-11-23 06:51:15,331 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:15,332 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:15,332 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:15,332 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:15,332 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:15,332 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:15,332 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:15,332 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00145697593689
+2020-11-23 06:51:15,332 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 17, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:15,561 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 26.43ms
+2020-11-23 06:51:15,596 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 15.05ms
+2020-11-23 06:51:15,648 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:15,649 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:15,832 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114272]
+2020-11-23 06:51:15,832 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:15,833 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 17/
+2020-11-23 06:51:15,833 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:15,833 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 17
+2020-11-23 06:51:15,833 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:15,834 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:15,834 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:15,834 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:15,834 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:15,835 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:15,835 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:15,835 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00344896316528
+2020-11-23 06:51:15,835 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 17, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:16,150 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:16,152 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:16,333 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:16,333 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114274]
+2020-11-23 06:51:16,333 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:16,333 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 16
+2020-11-23 06:51:16,333 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:16,333 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:16,334 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:16,334 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:16,334 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:16,334 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:16,334 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:16,334 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00146389007568
+2020-11-23 06:51:16,334 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 16, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:16,628 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 30.46ms
+2020-11-23 06:51:16,646 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.48ms
+2020-11-23 06:51:16,833 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114273]
+2020-11-23 06:51:16,834 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:16,834 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 19/
+2020-11-23 06:51:16,834 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:16,834 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 16
+2020-11-23 06:51:16,834 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:16,834 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:16,834 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:16,834 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:16,835 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:16,835 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:16,835 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:16,835 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00155687332153
+2020-11-23 06:51:16,835 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 16, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:17,071 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:17,072 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:17,334 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:17,335 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114275]
+2020-11-23 06:51:17,335 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:17,336 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 15
+2020-11-23 06:51:17,336 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:17,336 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:17,336 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:17,337 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:17,337 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:17,337 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:17,337 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:17,338 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00349807739258
+2020-11-23 06:51:17,338 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 15, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:17,678 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 31.20ms
+2020-11-23 06:51:17,697 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.49ms
+2020-11-23 06:51:17,835 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114274]
+2020-11-23 06:51:17,835 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:17,836 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 22/
+2020-11-23 06:51:17,836 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:17,836 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 15
+2020-11-23 06:51:17,836 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:17,836 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:17,836 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:17,837 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:17,837 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:17,837 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:17,837 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:17,837 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00189208984375
+2020-11-23 06:51:17,837 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 15, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:17,993 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:17,995 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:18,336 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:18,336 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114276]
+2020-11-23 06:51:18,337 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:18,337 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 14
+2020-11-23 06:51:18,337 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:18,337 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:18,338 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:18,338 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:18,338 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:18,339 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:18,339 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:18,339 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00336098670959
+2020-11-23 06:51:18,339 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 14, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:18,728 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 29.51ms
+2020-11-23 06:51:18,745 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.47ms
+2020-11-23 06:51:18,837 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114275]
+2020-11-23 06:51:18,838 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:18,838 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 25/
+2020-11-23 06:51:18,839 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:18,839 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 14
+2020-11-23 06:51:18,839 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:18,839 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:18,840 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:18,840 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:18,840 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:18,840 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:18,840 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:18,841 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00375413894653
+2020-11-23 06:51:18,841 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 14, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:19,119 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:19,120 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:19,338 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:19,338 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114277]
+2020-11-23 06:51:19,339 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:19,339 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 13
+2020-11-23 06:51:19,339 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:19,340 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:19,340 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:19,340 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:19,340 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:19,341 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:19,341 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:19,341 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00322890281677
+2020-11-23 06:51:19,341 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 13, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:19,760 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 13.95ms
+2020-11-23 06:51:19,775 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 7.78ms
+2020-11-23 06:51:19,839 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114276]
+2020-11-23 06:51:19,839 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:19,840 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 27/
+2020-11-23 06:51:19,840 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:19,840 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 13
+2020-11-23 06:51:19,840 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:19,840 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:19,840 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:19,840 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:19,840 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:19,841 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:19,841 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:19,841 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00171208381653
+2020-11-23 06:51:19,841 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 13, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:20,143 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:20,145 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:20,340 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:20,340 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114278]
+2020-11-23 06:51:20,340 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:20,340 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 12
+2020-11-23 06:51:20,341 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:20,341 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:20,341 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:20,341 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:20,341 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:20,341 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:20,341 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:20,341 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00128984451294
+2020-11-23 06:51:20,341 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 12, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:20,804 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 28.58ms
+2020-11-23 06:51:20,822 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.41ms
+2020-11-23 06:51:20,841 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114277]
+2020-11-23 06:51:20,841 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:20,841 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 30/
+2020-11-23 06:51:20,842 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:20,842 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 12
+2020-11-23 06:51:20,842 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:20,842 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:20,842 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:20,842 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:20,843 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:20,843 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:20,843 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:20,843 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00247192382812
+2020-11-23 06:51:20,843 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 12, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:21,065 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:21,066 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:21,342 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:21,342 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114279]
+2020-11-23 06:51:21,343 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:21,343 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 11
+2020-11-23 06:51:21,344 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:21,344 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:21,344 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:21,344 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:21,345 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:21,345 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:21,345 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:21,345 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00379991531372
+2020-11-23 06:51:21,346 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 11, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:21,835 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 11.53ms
+2020-11-23 06:51:21,843 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:21,845 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:21,848 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:21,849 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 11
+2020-11-23 06:51:21,849 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:21,849 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:21,850 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:21,850 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:21,850 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:21,851 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 10.02ms
+2020-11-23 06:51:21,851 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:21,851 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:21,851 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00806379318237
+2020-11-23 06:51:21,851 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 11, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:22,344 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114278]
+2020-11-23 06:51:22,344 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114280]
+2020-11-23 06:51:22,345 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 33/
+2020-11-23 06:51:22,345 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:22,345 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 10
+2020-11-23 06:51:22,346 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:22,346 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:22,346 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:22,347 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:22,347 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:22,347 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:22,347 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:22,347 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00378489494324
+2020-11-23 06:51:22,348 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 10, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:22,601 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:22,604 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:22,845 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:22,845 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:22,846 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:22,846 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 10
+2020-11-23 06:51:22,846 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:22,847 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:22,847 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:22,847 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:22,847 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:22,848 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:22,848 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:22,848 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00315713882446
+2020-11-23 06:51:22,848 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 10, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:22,879 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 27.79ms
+2020-11-23 06:51:22,896 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.43ms
+2020-11-23 06:51:23,346 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114279]
+2020-11-23 06:51:23,347 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114281]
+2020-11-23 06:51:23,347 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 37/
+2020-11-23 06:51:23,348 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:23,348 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 9
+2020-11-23 06:51:23,348 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:23,348 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:23,349 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:23,349 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:23,349 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:23,349 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:23,349 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:23,350 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00371313095093
+2020-11-23 06:51:23,350 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 9, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:23,595 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:23,597 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:23,847 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:23,847 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:23,848 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:23,848 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 9
+2020-11-23 06:51:23,848 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:23,848 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:23,848 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:23,848 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:23,848 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:23,848 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:23,849 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:23,849 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00152087211609
+2020-11-23 06:51:23,849 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 9, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:23,925 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 28.26ms
+2020-11-23 06:51:23,947 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 9.14ms
+2020-11-23 06:51:24,348 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114280]
+2020-11-23 06:51:24,348 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114282]
+2020-11-23 06:51:24,349 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 39/
+2020-11-23 06:51:24,349 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:24,349 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 8
+2020-11-23 06:51:24,349 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:24,349 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:24,349 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:24,349 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:24,349 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:24,349 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:24,349 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:24,350 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00153207778931
+2020-11-23 06:51:24,350 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 8, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:24,547 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:24,549 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:24,849 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:24,849 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:24,849 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:24,849 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 8
+2020-11-23 06:51:24,849 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:24,849 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:24,850 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:24,850 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:24,850 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:24,850 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:24,850 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:24,850 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00154185295105
+2020-11-23 06:51:24,850 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 8, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:24,979 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 30.06ms
+2020-11-23 06:51:24,994 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.67ms
+2020-11-23 06:51:25,350 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114281]
+2020-11-23 06:51:25,350 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114283]
+2020-11-23 06:51:25,350 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 43/
+2020-11-23 06:51:25,350 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:25,350 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 7
+2020-11-23 06:51:25,350 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:25,351 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:25,351 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:25,351 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:25,351 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:25,351 [DEBUG] netort.process process.py:23	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs /var/loadtest/logs | tail -n 1 | awk '{print \$4}' "
+2020-11-23 06:51:25,576 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:25,579 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:26,012 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 17.67ms
+2020-11-23 06:51:26,029 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 8.78ms
+2020-11-23 06:51:26,254 [DEBUG] netort.process process.py:46	Process output:
+194298
+
+2020-11-23 06:51:26,254 [DEBUG] netort.process process.py:48	Process exit code: 0
+2020-11-23 06:51:26,254 [DEBUG] root plugin.py:58	Result: (0, '194298\n', '')
+2020-11-23 06:51:26,254 [DEBUG] yandextank.common.interfaces plugin.py:64	Disk free space: 194298/2048
+2020-11-23 06:51:26,255 [DEBUG] yandextank.common.interfaces plugin.py:75	Memory free: 4257/512
+2020-11-23 06:51:26,255 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:26,255 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:26,255 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.90568113327
+2020-11-23 06:51:26,255 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 7, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:26,256 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114282]
+2020-11-23 06:51:26,256 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114284]
+2020-11-23 06:51:26,256 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 46/
+2020-11-23 06:51:26,256 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:26,256 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 6
+2020-11-23 06:51:26,256 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:26,257 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:26,257 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:26,257 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:26,257 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:26,257 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:26,257 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:26,257 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00171208381653
+2020-11-23 06:51:26,257 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 6, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:26,492 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:26,494 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:26,756 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:26,757 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:26,757 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:26,757 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 6
+2020-11-23 06:51:26,757 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:26,757 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:26,757 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:26,757 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:26,757 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:26,757 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:26,758 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:26,758 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00130796432495
+2020-11-23 06:51:26,758 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 6, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:27,042 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 11.82ms
+2020-11-23 06:51:27,055 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 7.20ms
+2020-11-23 06:51:27,257 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114283]
+2020-11-23 06:51:27,257 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114285]
+2020-11-23 06:51:27,257 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 50/
+2020-11-23 06:51:27,257 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:27,258 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 5
+2020-11-23 06:51:27,258 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:27,258 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:27,258 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:27,258 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:27,258 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:27,258 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:27,258 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:27,258 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00160884857178
+2020-11-23 06:51:27,258 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 5, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:27,518 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:27,519 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:27,757 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:27,757 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:27,762 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:27,762 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 5
+2020-11-23 06:51:27,762 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:27,762 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:27,763 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:27,763 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:27,763 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:27,763 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:27,763 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:27,763 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00601005554199
+2020-11-23 06:51:27,763 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 5, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:28,068 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 11.79ms
+2020-11-23 06:51:28,081 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.67ms
+2020-11-23 06:51:28,090 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.92ms
+2020-11-23 06:51:28,258 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114284, 1606114285]
+2020-11-23 06:51:28,258 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114286]
+2020-11-23 06:51:28,258 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 54/
+2020-11-23 06:51:28,259 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 58/
+2020-11-23 06:51:28,259 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:28,259 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 4
+2020-11-23 06:51:28,259 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:28,259 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:28,259 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:28,259 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:28,259 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:28,259 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:28,260 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:28,260 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00181698799133
+2020-11-23 06:51:28,260 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 4, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:28,543 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:28,545 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:28,759 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:28,759 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:28,759 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:28,759 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 4
+2020-11-23 06:51:28,759 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:28,759 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:28,759 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:28,760 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:28,760 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:28,760 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:28,760 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:28,760 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00134515762329
+2020-11-23 06:51:28,760 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 4, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:28,847 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:28,848 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:29,102 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 10.98ms
+2020-11-23 06:51:29,260 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:29,260 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114287]
+2020-11-23 06:51:29,260 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:29,261 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 3
+2020-11-23 06:51:29,261 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:29,261 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:29,261 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:29,262 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:29,262 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:29,262 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:29,263 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:29,263 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00340104103088
+2020-11-23 06:51:29,263 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 3, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:29,761 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:29,761 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:29,761 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:29,761 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 3
+2020-11-23 06:51:29,761 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:29,761 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:29,762 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:29,762 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:29,762 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:29,762 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:29,762 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:29,762 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00129294395447
+2020-11-23 06:51:29,762 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 3, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:30,126 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 16.24ms
+2020-11-23 06:51:30,143 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 8.59ms
+2020-11-23 06:51:30,151 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.48ms
+2020-11-23 06:51:30,262 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114286, 1606114287]
+2020-11-23 06:51:30,262 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114288]
+2020-11-23 06:51:30,263 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 62/
+2020-11-23 06:51:30,264 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 66/
+2020-11-23 06:51:30,264 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:30,264 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 2
+2020-11-23 06:51:30,265 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:30,265 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:30,266 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:30,271 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:30,272 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:30,272 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:30,272 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:30,273 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.0111498832703
+2020-11-23 06:51:30,273 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 2, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:30,485 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:30,486 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:30,690 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:30,691 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:30,763 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:30,763 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:30,763 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:30,763 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 2
+2020-11-23 06:51:30,763 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:30,764 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:30,764 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:30,764 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:30,764 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:30,764 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:30,765 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:30,765 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00228500366211
+2020-11-23 06:51:30,765 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 2, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:31,181 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 29.23ms
+2020-11-23 06:51:31,263 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:31,264 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114289]
+2020-11-23 06:51:31,264 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:31,264 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 1
+2020-11-23 06:51:31,264 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:31,264 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:31,264 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:31,264 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:31,265 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:31,265 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:31,265 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:31,265 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00138902664185
+2020-11-23 06:51:31,265 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 1, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:31,764 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:31,765 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:31,765 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:31,765 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 1
+2020-11-23 06:51:31,765 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:31,765 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:31,765 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:31,765 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:31,765 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:31,765 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:31,765 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:31,766 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00131392478943
+2020-11-23 06:51:31,766 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 1, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:32,203 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 11.33ms
+2020-11-23 06:51:32,216 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.45ms
+2020-11-23 06:51:32,265 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114288]
+2020-11-23 06:51:32,265 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114290]
+2020-11-23 06:51:32,265 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 71/
+2020-11-23 06:51:32,265 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:32,265 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 0
+2020-11-23 06:51:32,266 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:32,266 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:32,266 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:32,266 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:32,266 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:32,266 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:32,266 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:32,266 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00158596038818
+2020-11-23 06:51:32,266 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 0, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:32,533 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:32,534 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:32,766 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2020-11-23 06:51:32,766 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:32,766 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:32,767 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/eta: 0
+2020-11-23 06:51:32,767 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:32,767 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:32,768 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:32,768 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:32,768 [DEBUG] yandextank.common.interfaces plugin.py:44	Checking tank resources...
+2020-11-23 06:51:32,768 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:32,769 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:32,769 [DEBUG] yandextank.core.tankcore tankcore.py:292	Polling took 0.00336885452271
+2020-11-23 06:51:32,769 [DEBUG] yandextank.core.tankcore tankcore.py:293	Tank status: {"core": {"stage": "shoot"}, "stepper": {"progress": 100, "loop_count": 22, "speed": "6 Krps"}, "uploader": {"task": "", "web_link": "https://overload.yandex.net/354049", "job_name": "Chistov_HW7_tests", "person": "root", "version": "", "meta": {"loop_count": 22, "cmdline": "/usr/local/bin/yandex-tank", "target_port": 2021, "ammo_path": "/var/loadtest/ammo.txt ", "target_host": "192.168.1.10"}, "job_no": 354049, "job_dsc": "Test_line_schedule"}, "Plugin": {"eta": 0, "web_link": "https://overload.yandex.net/354049", "jobno": 354049, "job_no": 354049}}
+2020-11-23 06:51:33,251 [DEBUG] yandextank.plugins.Phantom.reader reader.py:62	Chunk decode time: 33.63ms
+2020-11-23 06:51:33,264 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 6.54ms
+2020-11-23 06:51:33,267 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114289]
+2020-11-23 06:51:33,267 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: [1606114291]
+2020-11-23 06:51:33,267 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 75/
+2020-11-23 06:51:33,268 [DEBUG] yandextank.core.tankcore tankcore.py:286	Polling <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:33,268 [INFO] yandextank.plugins.Phantom.plugin plugin.py:159	Phantom done its work with exit code: 0
+2020-11-23 06:51:33,269 [INFO] yandextank.core.tankcore tankcore.py:301	Finishing test...
+2020-11-23 06:51:33,269 [INFO] yandextank.core.tankcore tankcore.py:303	Stopping load generator and aggregator
+2020-11-23 06:51:33,270 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:176	Seems phantom finished OK
+2020-11-23 06:51:33,270 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:123	Closing stats reader
+2020-11-23 06:51:33,270 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:126	Waiting for gun drain to finish
+2020-11-23 06:51:33,591 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:33,594 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:34,297 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 24.20ms
+2020-11-23 06:51:34,310 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 9.67ms
+2020-11-23 06:51:34,319 [DEBUG] yandextank.aggregator.aggregator aggregator.py:157	Aggregation time: 7.33ms
+2020-11-23 06:51:34,319 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:128	Waiting for stats drain to finish
+2020-11-23 06:51:34,319 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:130	Collecting remaining data
+2020-11-23 06:51:34,319 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: [1606114290, 1606114291, 1606114292]
+2020-11-23 06:51:34,319 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2020-11-23 06:51:34,320 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 81/
+2020-11-23 06:51:34,320 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 85/
+2020-11-23 06:51:34,320 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:108	Timestamps without stats:
+2020-11-23 06:51:34,320 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:110	1606114292
+2020-11-23 06:51:34,320 [DEBUG] yandextank.plugins.Phantom.plugin plugin.py:193	Processed ammo count: 90/
+2020-11-23 06:51:34,321 [DEBUG] yandextank.core.tankcore tankcore.py:305	RC after: 0
+2020-11-23 06:51:34,321 [INFO] yandextank.core.tankcore tankcore.py:307	Stopping monitoring
+2020-11-23 06:51:34,321 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:34,321 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 0
+2020-11-23 06:51:34,321 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 0
+2020-11-23 06:51:34,321 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:34,321 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 0
+2020-11-23 06:51:34,321 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 0
+2020-11-23 06:51:34,321 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:34,322 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 0
+2020-11-23 06:51:34,322 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 0
+2020-11-23 06:51:34,322 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:34,322 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 0
+2020-11-23 06:51:34,322 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 0
+2020-11-23 06:51:34,322 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:34,322 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 0
+2020-11-23 06:51:34,322 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinitial config
+2020-11-23 06:51:34,347 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/configinitial.txt?api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:34,349 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinfo config
+2020-11-23 06:51:34,351 [DEBUG] urllib3.connectionpool connectionpool.py:240	Resetting dropped connection: overload.yandex.net
+2020-11-23 06:51:34,366 [DEBUG] urllib3.connectionpool connectionpool.py:813	Starting new HTTPS connection (2): overload.yandex.net:443
+2020-11-23 06:51:34,469 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/configinfo.txt?api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:34,473 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:478	Unlocking targets: ['192.168.1.10']
+2020-11-23 06:51:34,475 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:480	192.168.1.10
+2020-11-23 06:51:34,475 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 0
+2020-11-23 06:51:34,476 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:34,477 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 0
+2020-11-23 06:51:34,477 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 0
+2020-11-23 06:51:34,478 [INFO] yandextank.core.tankcore tankcore.py:330	Post-processing test...
+2020-11-23 06:51:34,479 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.Phantom.plugin.Plugin object at 0x7fc981f4ded0>
+2020-11-23 06:51:34,479 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 0
+2020-11-23 06:51:34,480 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 0
+2020-11-23 06:51:34,480 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.Autostop.plugin.Plugin object at 0x7fc981f4d390>
+2020-11-23 06:51:34,481 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 0
+2020-11-23 06:51:34,481 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 0
+2020-11-23 06:51:34,482 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.ShellExec.plugin.Plugin object at 0x7fc981f4d290>
+2020-11-23 06:51:34,483 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 0
+2020-11-23 06:51:34,483 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 0
+2020-11-23 06:51:34,484 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.RCAssert.plugin.Plugin object at 0x7fc981f4de50>
+2020-11-23 06:51:34,484 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 0
+2020-11-23 06:51:34,485 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 0
+2020-11-23 06:51:34,485 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x7fc981f4d110>
+2020-11-23 06:51:34,486 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 0
+2020-11-23 06:51:34,486 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 0
+2020-11-23 06:51:34,487 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.DataUploader.plugin.Plugin object at 0x7fc981f4d990>
+2020-11-23 06:51:34,487 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 0
+2020-11-23 06:51:34,488 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:350	Waiting for sender threads to join.
+2020-11-23 06:51:34,510 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:418	Monitoring Uploader queue returned None
+2020-11-23 06:51:34,511 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:438	Closing Monitoring Uploader thread
+2020-11-23 06:51:34,685 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:34,688 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:34,992 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:34,994 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:35,401 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/push_data.json?upload_token=f1b894dccd6e4cc79ce7984fbd4f585b&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:35,404 [DEBUG] yandextank.plugins.DataUploader.client client.py:511	API response: [{u'success': 1}]
+2020-11-23 06:51:35,405 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:418	Data Uploader queue returned None
+2020-11-23 06:51:35,406 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:438	Closing Data Uploader thread
+2020-11-23 06:51:35,407 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:357	Web link: https://overload.yandex.net/354049
+2020-11-23 06:51:35,407 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.plugins.Autostop.plugin.Plugin'>
+2020-11-23 06:51:35,408 [DEBUG] yandextank.plugins.DataUploader.plugin plugin.py:376	No autostop cause detected
+2020-11-23 06:51:35,408 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinitial config
+2020-11-23 06:51:35,527 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/configinitial.txt?api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:35,531 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinfo config
+2020-11-23 06:51:35,538 [DEBUG] urllib3.connectionpool connectionpool.py:240	Resetting dropped connection: overload.yandex.net
+2020-11-23 06:51:35,688 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/354049/configinfo.txt?api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:35,692 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 0
+2020-11-23 06:51:35,692 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.JsonReport.plugin.Plugin object at 0x7fc982291a10>
+2020-11-23 06:51:35,693 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 0
+2020-11-23 06:51:35,693 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 0
+2020-11-23 06:51:35,694 [INFO] root consoleworker.py:269	Trying to clean up
+2020-11-23 06:51:35,695 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_phantom
+2020-11-23 06:51:35,695 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_autostop
+2020-11-23 06:51:35,696 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_shellexec
+2020-11-23 06:51:35,697 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_rcassert
+2020-11-23 06:51:35,698 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_rcheck
+2020-11-23 06:51:35,698 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_overload
+2020-11-23 06:51:35,913 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "GET /api/job/354049/close.json?exitcode=0&api_token=7873ea1da12a408abd2b9b4577d56533 HTTP/1.1" 200 16
+2020-11-23 06:51:35,916 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:478	Unlocking targets: ['192.168.1.10']
+2020-11-23 06:51:35,917 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:480	192.168.1.10
+2020-11-23 06:51:35,918 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_json_report
+2020-11-23 06:51:35,918 [INFO] yandextank.core.tankcore tankcore.py:561	Releasing lock: /var/lock/lunapark_Qf_bLR.lock
+2020-11-23 06:51:35,927 [DEBUG] yandextank.core.tankcore tankcore.py:367	Collecting artifacts
+2020-11-23 06:51:35,927 [INFO] yandextank.core.tankcore tankcore.py:368	Artifacts dir: /var/loadtest/logs/2020-11-23_06-50-59.353573
+2020-11-23 06:51:35,928 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_jA2XmK.conf to /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_jA2XmK.conf
+2020-11-23 06:51:35,929 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_jA2XmK.conf
+2020-11-23 06:51:35,935 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_06-50-59.353573/answ_61FImx.log to /var/loadtest/logs/2020-11-23_06-50-59.353573/answ_61FImx.log
+2020-11-23 06:51:35,935 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_06-50-59.353573/answ_61FImx.log
+2020-11-23 06:51:35,936 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_Rqfr8m.log to /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_Rqfr8m.log
+2020-11-23 06:51:35,937 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_Rqfr8m.log
+2020-11-23 06:51:35,938 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_06-50-59.353573/phout_7upRbg.log to /var/loadtest/logs/2020-11-23_06-50-59.353573/phout_7upRbg.log
+2020-11-23 06:51:35,938 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_06-50-59.353573/phout_7upRbg.log
+2020-11-23 06:51:35,939 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: validation_error.yaml to /var/loadtest/logs/2020-11-23_06-50-59.353573/validation_error.yaml
+2020-11-23 06:51:35,940 [WARNING] yandextank.core.tankcore tankcore.py:424	File not found to collect: validation_error.yaml
+2020-11-23 06:51:35,941 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_stdout_stderr_ozbuXa.log to /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_stdout_stderr_ozbuXa.log
+2020-11-23 06:51:35,941 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_stdout_stderr_ozbuXa.log
+2020-11-23 06:51:35,942 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: jobno_file.txt to /var/loadtest/logs/2020-11-23_06-50-59.353573/jobno_file.txt
+2020-11-23 06:51:35,944 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_stat_8sH817.log to /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_stat_8sH817.log
+2020-11-23 06:51:35,944 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2020-11-23_06-50-59.353573/phantom_stat_8sH817.log

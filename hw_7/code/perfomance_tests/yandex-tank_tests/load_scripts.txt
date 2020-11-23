@@ -1,0 +1,71 @@
+#Скрипты для разных видов подачи нагрузки load.yaml
+
+########################################################################################################################
+#Ступенчатая нагрузка, возрастание от 1 запроса до 10 с шагом 1, длительность 60 сек
+overload:
+  enabled: true
+  token_file: /var/loadtest/token.txt
+  package: yandextank.plugins.DataUploader
+  job_name: Chistov_HW7_tests
+  job_dsc: Test_step_schedule
+phantom:
+  enabled: true
+  address: 192.168.1.10:2021
+  ammofile: /var/loadtest/ammo.txt
+  load_profile:
+    load_type: rps
+    schedule: step(1, 10, 1, 1m)
+telegraf:
+  enabled: true
+  package: yandextank.plugins.Telegraf
+  config: /var/loadtest/monitoring.xml
+console:
+  enabled: false
+########################################################################################################################
+
+
+########################################################################################################################
+#Линейная нагрузка, возрастание от 1 запроса до 5, длительность 30 сек
+overload:
+  enabled: true
+  token_file: /var/loadtest/token.txt
+  package: yandextank.plugins.DataUploader
+  job_name: Chistov_HW7_tests
+  job_dsc: Test_line_schedule
+phantom:
+  enabled: true
+  address: 192.168.1.10:2021
+  ammofile: /var/loadtest/ammo.txt
+  load_profile:
+    load_type: rps
+    schedule: line(1, 5, 30)
+telegraf:
+  enabled: true
+  package: yandextank.plugins.Telegraf
+  config: /var/loadtest/monitoring.xml
+console:
+  enabled: false
+########################################################################################################################
+
+########################################################################################################################
+#Постоянная нагрузка в 2 пользователя, на протяжении 30 сек
+overload:
+  enabled: true
+  token_file: /var/loadtest/token.txt
+  package: yandextank.plugins.DataUploader
+  job_name: Chistov_HW7_tests
+  job_dsc: Test_const_schedule
+phantom:
+  enabled: true
+  address: 192.168.1.10:2021
+  ammofile: /var/loadtest/ammo.txt
+  load_profile:
+    load_type: rps
+    schedule: const(2, 30)
+telegraf:
+  enabled: true
+  package: yandextank.plugins.Telegraf
+  config: /var/loadtest/monitoring.xml
+console:
+  enabled: false
+########################################################################################################################
