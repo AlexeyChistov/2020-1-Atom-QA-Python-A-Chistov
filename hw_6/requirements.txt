@@ -1,8 +1,0 @@
-pytest
-pytest-xdist
-selenium
-pymysql
-faker
-webdriver-manager
-requests
-flask
